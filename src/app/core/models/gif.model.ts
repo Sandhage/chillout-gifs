@@ -13,8 +13,8 @@ export class GifClass {
         
         gif.id = input['data'].id;
         gif.title = input['data'].title;
-        gif.height = input['data'].preview.images[0].source.height * 0.225;
-        gif.width = input['data'].preview.images[0].source.width * 0.225;
+        gif.height = input['data'].preview.images[0].source.height * 0.3;
+        gif.width = input['data'].preview.images[0].source.width * 0.3;
         gif.src = input['data'].url;
 
         return gif;
