@@ -1,0 +1,6 @@
+<div class="card-container" [ngStyle]="{'width.px': gif.width, 'height.px': gif.height}"
+     (mouseover)="showHover = true" (mouseleave)="showHover = false">
+  <label *ngIf="showHover">{{gif.title}}</label>
+
+  <img [attr.src]="gif.src" [ngStyle]="{'width.px': gif.width, 'height.px': gif.height}">
+</div>
